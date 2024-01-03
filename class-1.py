@@ -42,7 +42,7 @@
 #         print(z)
 
 
-'''5. Write a program in python to take input of 5 subject mark and take maximum number. Find total and calculate percent on the basis of percent provide grade like:
+'''(Without using function) 5. Write a program in python to take input of 5 subject mark and take maximum number. Find total and calculate percent on the basis of percent provide grade like:
     
     Per > 80 “A+”
     Per > 65 and per <=80 “A” 
@@ -128,3 +128,84 @@
 #     print("C")
 # else:
 #     print("Fail")
+
+
+'''(By using function) 5. Write a program in python to take input of 5 subject mark and take maximum number. Find total and calculate percent on the basis of percent provide grade like:
+    
+    Per > 80 “A+”
+    Per > 65 and per <=80 “A” 
+    Per > 50 and per <=65 “B”
+    Per >= 42 and per <=50 “C”
+    Per < 42 “Fail'''
+
+
+# def printGrading(percentage):
+#     # Check gradings for subject 'One'
+#     if percentage > 80:
+#         print("A+")
+#     elif percentage > 65 and percentage <= 80:
+#         print("A")
+#     elif percentage > 50 and percentage <= 65:
+#         print("B")
+#     elif percentage >= 62 and percentage <= 50:
+#         print("C")
+#     else:
+#         print("Fail")
+
+# # maximum number
+# max = 50
+
+# # Subject Marks
+# one = 41.5
+# two = 30
+# three = 40
+# four = 35
+# five = 22
+
+# # Percentage of marks
+# percentage_of_one = (one * 100) / max
+# percentage_of_two = (two * 100) / max
+# percentage_of_three = (three * 100) / max
+# percentage_of_four = (four * 100) / max
+# percentage_of_five = (five * 100) / max
+
+# printGrading(percentage_of_one)
+# printGrading(percentage_of_two)
+# printGrading(percentage_of_three)
+# printGrading(percentage_of_four)
+# printGrading(percentage_of_five)
+
+
+'''Problm without function'''
+# 1. Code porte somossa hocche -> Low readibility
+# 2. Code repetation -> DRY -> Donot repeat your self
+# 3. Update korte somossa hocche
+
+
+'''Understanding function'''
+# def print_user(name, age, varsity):
+#     print("It is " + name)
+#     print("age is " + age)
+#     print("Varsity is " + varsity)
+#     return age == '25'
+
+
+# hasib = "Hasib"
+# is25 = print_user(hasib, "23", "DIU")
+
+
+'''Understanding loop'''
+# i = 0
+# while i < 20:
+#     i = i + 1
+#     if i % 2 == 0:
+#         break
+
+#     print(i)
+
+'''6. Write a program in python to print multiplication table of given number'''
+# formula:  i x 2 = i * 2
+i = 1
+while i <= 10:
+    print( str(i) + " x 2 = " + str(i * 2) )
+    i += 1
